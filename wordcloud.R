@@ -19,7 +19,7 @@ post <- tm_map(post, removepunct)
 removeURL <- function(y) gsub("(s?)(f|ht)tp(s?)://\\S+\\b", "", y)
 post <- tm_map(post, removeURL)
 
-# remove "media tidak disertakan"
+# remove word "media tidak disertakan" for media file
 library(tidyverse)
 removemedia <- function (z) str_remove_all(z, "media tidak disertakan")
 post <- tm_map(post, removemedia)
