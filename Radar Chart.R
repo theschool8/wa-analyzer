@@ -36,49 +36,49 @@ data3 = data.frame(rbind(max=max(data2), min=min(data2), data2))
 colnames(data3) = seq(0,23,1)
 data3 = data3[,seq(24,1,-1)]     
 
-# Create plot Galih
+# Create plot member1
 radarchart(data3[c(1,2,5),], 
            seg = 10,  # Number of axis segments
            title = "Galih",
            pfcol = scales::alpha("darkblue", 0.9),
            plwd = 2)
 
-# Create plot Hilmi
+# Create plot member2
 radarchart(data3[c(1,2,7),], 
            seg = 10,  # Number of axis segments
            title = "Hilmi",
            pfcol = scales::alpha("Green", 0.9),
            plwd = 2)
 
-# Create plot mustofa
+# Create plot member3
 radarchart(data3[c(1,2,9),], 
            seg = 10,  # Number of axis segments
            title = "mustofa",
            pfcol = scales::alpha("yellow", 0.9),
            plwd = 2)
 
-# Create plot Lintang
+# Create plot member4
 radarchart(data3[c(1,2,8),], 
            seg = 10,  # Number of axis segments
            title = "Lintang",
            pfcol = scales::alpha("skyblue", 0.9),
            plwd = 2)
 
-# Create plot Dimas
+# Create plot member5
 radarchart(data3[c(1,2,4),], 
            seg = 10,  # Number of axis segments
            title = "Dimas",
            pfcol = scales::alpha("Maroon", 0.9),
            plwd = 2)
 
-# Create plot Irul
+# Create plot member6
 radarchart(data3[c(1,2,3),], 
            seg = 10,  # Number of axis segments
            title = "Irul",
            pfcol = scales::alpha("orange", 0.9),
            plwd = 2)
 
-# Create plot Haikal
+# Create plot member7
 radarchart(data3[c(1,2,6),], 
            seg = 10,  # Number of axis segments
            title = "Haikal",
